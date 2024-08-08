@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body  bgcolor='sky blue'>
+    <h1>home</h1>
+    {{category}}<br>
+  
+    <ul>
+    {% for i in product%}
+    <table border="3">
+        {% for k,v in i.items %}
+        <tr>
+            <td>{{k}}</td>
+           <td> {% if k == 'spec' %}
+                {% for f in v%}
+                    <ul><li>{{f}}</li></ul>
+                {% endfor %}
+            {%else%}
+                {{v}}
+            {%endif%}</td>
+        </tr>
+        {%endfor%}
+        <br>
+    {%endfor%}
+</table>
+    </ul>
+    
+        
+
+</body>
+</html>

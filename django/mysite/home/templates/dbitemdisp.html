@@ -1,0 +1,10 @@
+{% extends 'landingpage.html' %}
+{%block content%}
+   {% for i in pros%}
+      Name:-<a href="http://127.0.0.1:8000/home/pro/{{i.id}}">{{i.name}}</a>
+      <br>
+   {% endfor %}
+
+
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'landingpage.html' %}
+{%block content%}
+<h1 style="color: blueviolet;">MY Cart</h1>
+
+{% for i in product%}<br>
+
+
+Id:-{{i.id}}<br>
+Name:-{{i.name}}<br>
+Quantity:-{{i.qty}}<br>
+Price:-{{i.price}}<br>
+Total:-{{i.t_price}}
+<br>
+{% endfor%}
+<br>
+Amount payable:-{{full}}
+
+{% endblock %}

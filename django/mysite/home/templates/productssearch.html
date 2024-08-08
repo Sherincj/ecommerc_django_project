@@ -1,0 +1,16 @@
+{% extends 'landingpage.html' %}
+{% load static%}
+{% block content %}
+<script src="{% static 'js/chart.js'%}"></script>
+<input type="text"  id="keyword">
+<input type="button" value="search" onclick="getproddata()">
+<input type="button" value="DrawChart" onclick="getallpro()">
+<div id="datass"></div>
+
+
+<div>
+    <canvas id="myChart"></canvas>
+  </div>
+
+{% endblock %}
+

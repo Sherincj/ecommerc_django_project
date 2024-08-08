@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="brown">
+    <h1>hello</h1>
+    <form action="/product/userdata" method="post">
+        {%csrf_token%}
+        name <input type="text" name="na">
+        emailid<input type="email" name="em">
+        password<input type="password" name="ps">
+        phon<input type="text" name="ph">
+        <input type="submit" value="enter">
+    </form>
+</body>
+</html>

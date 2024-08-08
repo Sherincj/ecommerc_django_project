@@ -1,0 +1,23 @@
+{% extends 'landingpage.html' %}
+{%block content%}
+
+<table border="3">
+    <td>
+        <ul>
+            <li>
+{{val.id}}<br>
+{{val.desc}}<br>
+{{val.price}}<br>
+{{val.features}}<br>
+            </li>
+        </ul>
+    </td>
+</table>
+
+<form action="/home/addcart">
+    <input type="hidden" value="{{val.id}}" name="proid">
+    <input type="number" min="1" max="5" name='qty'>
+    <input type="submit" value="add to cart">
+</form>
+
+{% endblock %}
